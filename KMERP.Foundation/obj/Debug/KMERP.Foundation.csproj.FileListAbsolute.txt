@@ -1,0 +1,5 @@
+E:\Do\csharp\KMERP\KMERP.Foundation\bin\Debug\KMERP.Foundation.dll
+E:\Do\csharp\KMERP\KMERP.Foundation\bin\Debug\KMERP.Foundation.pdb
+E:\Do\csharp\KMERP\KMERP.Foundation\obj\Debug\ResolveAssemblyReference.cache
+E:\Do\csharp\KMERP\KMERP.Foundation\obj\Debug\KMERP.Foundation.dll
+E:\Do\csharp\KMERP\KMERP.Foundation\obj\Debug\KMERP.Foundation.pdb

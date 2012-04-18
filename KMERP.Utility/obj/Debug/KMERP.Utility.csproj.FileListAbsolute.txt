@@ -1,0 +1,5 @@
+E:\Do\csharp\KMERP\KMERP.Utility\bin\Debug\KMERP.Utility.dll
+E:\Do\csharp\KMERP\KMERP.Utility\bin\Debug\KMERP.Utility.pdb
+E:\Do\csharp\KMERP\KMERP.Utility\obj\Debug\ResolveAssemblyReference.cache
+E:\Do\csharp\KMERP\KMERP.Utility\obj\Debug\KMERP.Utility.dll
+E:\Do\csharp\KMERP\KMERP.Utility\obj\Debug\KMERP.Utility.pdb

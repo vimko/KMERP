@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F9A5D71-C812-4F0D-8932-9A5E3322EB1D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KMERP.Retalier</RootNamespace>
+    <AssemblyName>KMERP.Retalier</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Qios.DevSuite.Components, Version=4.0.0.20, Culture=neutral, PublicKeyToken=3cc53827b79c92fa, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\StockDataClasses.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockDataClasses.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\UserDataClasses.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserDataClasses.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="app.config" />
+    <None Include="DAL\StockDataClasses.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>StockDataClasses.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DAL\UserDataClasses.dbml.layout">
+      <DependentUpon>UserDataClasses.dbml</DependentUpon>
+    </None>
+    <None Include="DAL\StockDataClasses.dbml.layout">
+      <DependentUpon>StockDataClasses.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Admin\AdminOperatorForm.resx">
+      <DependentUpon>AdminOperatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Common\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Common\SelectClothingForm.resx">
+      <DependentUpon>SelectClothingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Sale\BackSaleForm.resx">
+      <DependentUpon>BackSaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Sale\PayMoneyForm.resx">
+      <DependentUpon>PayMoneyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Sale\SalePage.resx">
+      <DependentUpon>SalePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Sale\SaleReportPage.resx">
+      <DependentUpon>SaleReportPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Stock\AddClothingInfoForm.resx">
+      <DependentUpon>AddClothingInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Stock\AdminStockForm.resx">
+      <DependentUpon>AdminStockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Stock\ClothingBaseInfoListPage.resx">
+      <DependentUpon>ClothingBaseInfoListPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Stock\InStockForm.resx">
+      <DependentUpon>InStockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Stock\StockListPage.resx">
+      <DependentUpon>StockListPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserLoginForm.resx">
+      <DependentUpon>UserLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DAL\UserDataClasses.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>UserDataClasses.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UI\Admin\AdminOperatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Admin\AdminOperatorForm.Designer.cs">
+      <DependentUpon>AdminOperatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Common\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Common\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Common\SelectClothingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Common\SelectClothingForm.Designer.cs">
+      <DependentUpon>SelectClothingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Sale\BackSaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Sale\BackSaleForm.Designer.cs">
+      <DependentUpon>BackSaleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Sale\PayMoneyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Sale\PayMoneyForm.Designer.cs">
+      <DependentUpon>PayMoneyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Sale\SalePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Sale\SalePage.Designer.cs">
+      <DependentUpon>SalePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Sale\SaleReportPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Sale\SaleReportPage.Designer.cs">
+      <DependentUpon>SaleReportPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Stock\AddClothingInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Stock\AddClothingInfoForm.Designer.cs">
+      <DependentUpon>AddClothingInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Stock\AdminStockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Stock\AdminStockForm.Designer.cs">
+      <DependentUpon>AdminStockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Stock\ClothingBaseInfoListPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Stock\ClothingBaseInfoListPage.Designer.cs">
+      <DependentUpon>ClothingBaseInfoListPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Stock\InStockForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Stock\InStockForm.Designer.cs">
+      <DependentUpon>InStockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Stock\StockListPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Stock\StockListPage.Designer.cs">
+      <DependentUpon>StockListPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UserLoginForm.Designer.cs">
+      <DependentUpon>UserLoginForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Images\archive-insert-2.ico" />
+    <Content Include="Resources\Images\bookmark-new-7.ico" />
+    <Content Include="Resources\Images\Coin64.ico" />
+    <Content Include="Resources\Images\db_add-2.ico" />
+    <Content Include="Resources\Images\db_status-2.ico" />
+    <Content Include="Resources\Images\format-justify-fill-6.ico" />
+    <Content Include="Resources\Images\office-chart-line-stacked.ico" />
+    <Content Include="Resources\Images\system-search-2.ico" />
+    <Content Include="Resources\Images\system-search-3.ico" />
+    <Content Include="Resources\Images\user-info.ico" />
+    <Content Include="Resources\Images\user-info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BLL\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
