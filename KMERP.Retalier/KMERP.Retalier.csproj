@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\Class1.cs" />
     <Compile Include="DAL\StockDataClasses.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -241,9 +242,6 @@
     <Content Include="Resources\Images\system-search-3.ico" />
     <Content Include="Resources\Images\user-info.ico" />
     <Content Include="Resources\Images\user-info.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BLL\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

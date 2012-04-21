@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\Class1.cs" />
     <Compile Include="DAL\HeadquartersDataClasses.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -231,9 +232,6 @@
     <Content Include="Resources\package-x-generic.ico" />
     <Content Include="Resources\user-group-new-2.ico" />
     <Content Include="Resources\user-properties.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BLL\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
